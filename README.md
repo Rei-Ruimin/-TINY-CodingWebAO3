@@ -1,5 +1,6 @@
 # SFWAO3
-Safe for Work AO3 -- Add code-like stuffs in ao3 articles to pretend that I am coding! :P
+Safe for Work AO3 -- Add code-like stuffs in ao3 articles to pretend that I am coding! :P 
+Literally safe for work lol
 
 1. load this chrome extension.
 2. Just open an A03 article page and click the extension (only support chapter by chapter view right now)

@@ -1,0 +1,31 @@
+{
+  "name": "SFWAO3",
+  "description": "Safe for Work AO3 -- Add code-like stuffs in ao3 articles to pretend that I am coding! :P",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/logo.png",
+      "32": "/images/logo.png",
+      "48": "/images/logo.png",
+      "128": "/images/logo.png"
+    }
+  },
+  "icons": {
+    "16": "/images/logo.png",
+    "32": "/images/logo.png",
+    "48": "/images/logo.png",
+    "128": "/images/logo.png"
+  },
+  "content_scripts": [
+    {
+      "css": ["style1.css"],
+      "matches": ["https://archiveofourown.org/works/*"]
+    }
+  ]
+}

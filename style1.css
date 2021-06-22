@@ -1,0 +1,139 @@
+:root {
+  --color-mode: "light";
+  --color-bg: #fff;
+  --color-bg-shade: #f1f3f4;
+  --color-text: #3c4043;
+  --color-secondary-text: #5f6368;
+  --color-primary: #1a73e8;
+  --rgb-primary: 26, 115, 232;
+  --color-primary-shade: #1967d2;
+  --color-secondary: #e8f0fe;
+  --color-hairline: #dadce0;
+  --color-footer-bg: #f8f9fa;
+  --color-side-nav-hover: #f1f3f4;
+  --color-side-nav-active: #1a73e8;
+  --color-link-default-visited: #681da8;
+  --rgb-link-default-visited: 103, 29, 168;
+  --rgb-button-overlay: 60, 64, 67;
+  --color-code-bg: #f8f9fa;
+  --color-code-comment: #9aa0a6;
+  --color-code-string: #174ea6;
+  --color-code-tag: #1e8e3e;
+  --color-code-number: #1967d2;
+  --color-code-attr: #d01884;
+  --color-code-highlight: #fde293;
+  --color-code-add: #a8dab5;
+  --color-code-remove: #f6aea9;
+  --color-project-default: #1967d2;
+  --color-project-handbook: #c5221f;
+  --color-blue-lightest: rgba(232, 240, 254, 0.4);
+  --color-blue-lighter: rgba(232, 240, 254, 0.54);
+  --color-blue-medium: #1967d2;
+  --color-blue-darkest: #174ea6;
+  --rgb-blue-darkest: 23, 78, 166;
+  --color-yellow-lightest: rgba(254, 247, 224, 0.4);
+  --color-yellow-lighter: rgba(254, 247, 224, 0.5);
+  --color-yellow-medium: #f29900;
+  --color-yellow-darkest: #b05a00;
+  --rgb-yellow-darkest: 227, 117, 0;
+  --color-red-lightest: rgba(252, 232, 230, 0.4);
+  --color-red-lighter: rgba(252, 232, 230, 0.5);
+  --color-red-medium: #c5221f;
+  --color-red-darkest: #a50e0e;
+  --rgb-red-darkest: 165, 14, 14;
+  --color-green-lightest: rgba(230, 244, 234, 0.4);
+  --color-green-lighter: rgba(230, 244, 234, 0.5);
+  --color-green-medium: #188038;
+  --color-green-darkest: #0d652d;
+  --rgb-green-darkest: 13, 101, 45;
+  --color-purple-lightest: rgba(243, 232, 253, 0.4);
+  --color-purple-lighter: rgba(243, 232, 253, 0.5);
+  --color-purple-medium: #8430ce;
+  --color-purple-darkest: #681da8;
+  --rgb-purple-darkest: 104, 29, 168;
+  --color-pink-lightest: rgba(253, 231, 243, 0.4);
+  --color-pink-lighter: rgba(253, 231, 243, 0.5);
+  --color-pink-medium: #d01884;
+  --color-pink-darkest: #9c166b;
+  --rgb-pink-darkest: 156, 22, 107;
+  --color-cyan-lightest: rgba(228, 247, 251, 0.4);
+  --color-cyan-lighter: rgba(228, 247, 251, 0.5);
+  --color-cyan-medium: #129eaf;
+  --color-cyan-darkest: #007b83;
+  --rgb-cyan-darkest: 0, 122, 131;
+  --flow-space: 2rem;
+  font-size: 100%;
+}
+/*! CSS Used from: Embedded */
+.type code,.type pre{font-family:ui-monospace,Menlo,Consolas,Monaco,"Roboto Mono","Source Code Pro","Liberation Mono","Lucida Console",monospace;font-size:.9375em;line-height:1.7333333333;}
+*,::after,::before{box-sizing:border-box;}
+pre{margin:0;}
+@media (prefers-reduced-motion:reduce){
+*{animation-duration:.01s!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01s!important;}
+}
+.type pre code{font-size:inherit;}
+code,pre,pre[class*=language-]{background:var(--color-code-bg);border:1px solid var(--color-hairline);border-radius:3px;}
+pre,pre[class*=language-]{color:var(--color-text);overflow:auto;padding:.5em;}
+code{padding:.125em .25em;}
+pre>code{background:initial;border:initial;border-radius:initial;padding:initial;}
+.token.punctuation,.token.string{color:var(--color-code-string);}
+.token.property{color:var(--color-code-tag);}
+.token.boolean{color:var(--color-code-number);}
+.token.operator{color:var(--color-code-attr);}
+.highlight-line-active,.highlight-line-active *{color:var(--color-text)!important;}
+.highlight-line-active{background-color:var(--color-code-highlight);}
+.stack>*{margin-bottom:0;margin-top:0;}
+.stack>*+*{margin-top:var(--flow-space);}
+
+/*! CSS Used from: Embedded */
+*,::after,::before{box-sizing:border-box;}
+p{margin:0;}
+@media (prefers-reduced-motion:reduce){
+*{animation-duration:.01s!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01s!important;}
+}
+.stack>*{margin-bottom:0;margin-top:0;}
+.stack>*+*{margin-top:var(--flow-space);}
+.aside{--link-color:var(--color-blue-darkest);--link-visited-color:var(--color-blue-darkest);--link-rgb-background:var(--rgb-blue-darkest);background-color:var(--color-blue-lightest);border-radius:6px;color:var(--color-blue-darkest);padding:1.5rem;}
+
+/*! CSS Used from: Embedded */
+a:not([class]){color:var(--link-color, var(--color-primary));}
+a:not(.no-visited):visited:not([class]){color:var(--link-visited-color, var(--color-link-default-visited));}
+a:hover:not([class]){background-color:rgba(var(--link-rgb-background, var(--rgb-primary)),.08);}
+a:not(.no-visited):visited:hover:not([class]){background-color:rgba(var(--link-rgb-background, var(--rgb-link-default-visited)),.08);}
+a:focus:not([class]){background-color:rgba(var(--link-rgb-background, var(--rgb-primary)),.12);}
+a:active:not([class]){background-color:rgba(var(--link-rgb-background, var(--rgb-primary)),.16);}
+.type code{font-family:ui-monospace,Menlo,Consolas,Monaco,"Roboto Mono","Source Code Pro","Liberation Mono","Lucida Console",monospace;font-size:.9375em;line-height:1.7333333333;}
+*,::after,::before{box-sizing:border-box;}
+p{margin:0;}
+a:not([class]){text-decoration-skip-ink:auto;}
+@media (prefers-reduced-motion:reduce){
+*{animation-duration:.01s!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01s!important;}
+}
+code{background:var(--color-code-bg);border:1px solid var(--color-hairline);border-radius:3px;}
+code{padding:.125em .25em;}
+.stack>*{margin-bottom:0;margin-top:0;}
+.stack>*+*{margin-top:var(--flow-space);}
+
+/*! CSS Used from: Embedded */
+.type h2:hover:not([class^=type--var])>.heading-link{visibility:visible;}
+.type h2:not([class^=type--var]){font-family:"Google Sans",sans-serif;font-weight:400;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;text-rendering:optimizeSpeed;}
+.type h2:not([class^=type--var]){font-size:2rem;line-height:1.25;}
+*,::after,::before{box-sizing:border-box;}
+h2{margin:0;}
+@media (prefers-reduced-motion:reduce){
+*{animation-duration:.01s!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01s!important;}
+}
+.stack>*{margin-bottom:0;margin-top:0;}
+.stack>*+*{margin-top:var(--flow-space);}
+.heading-link{color:currentColor;text-decoration:none;visibility:hidden;}
+/*! CSS Used fontfaces */
+@font-face{font-display:swap;font-family:"Google Sans";font-style:normal;font-weight:400;src:url(https://developer.chrome.com/fonts/google-sans-v2003/regular/cyrillic.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+@font-face{font-display:swap;font-family:"Google Sans";font-style:normal;font-weight:400;src:url(https://developer.chrome.com/fonts/google-sans-v2003/regular/greek.woff2) format("woff2");unicode-range:U+0370-03FF;}
+@font-face{font-display:swap;font-family:"Google Sans";font-style:normal;font-weight:400;src:url(https://developer.chrome.com/fonts/google-sans-v2003/regular/vietnamese.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB;}
+@font-face{font-display:swap;font-family:"Google Sans";font-style:normal;font-weight:400;src:url(https://developer.chrome.com/fonts/google-sans-v2003/regular/latin-ext.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-display:swap;font-family:"Google Sans";font-style:normal;font-weight:400;src:url(https://developer.chrome.com/fonts/google-sans-v2003/regular/latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-display:swap;font-family:"Google Sans";font-style:normal;font-weight:500;src:url(https://developer.chrome.com/fonts/google-sans-v2003/medium/cyrillic.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+@font-face{font-display:swap;font-family:"Google Sans";font-style:normal;font-weight:500;src:url(https://developer.chrome.com/fonts/google-sans-v2003/medium/greek.woff2) format("woff2");unicode-range:U+0370-03FF;}
+@font-face{font-display:swap;font-family:"Google Sans";font-style:normal;font-weight:500;src:url(https://developer.chrome.com/fonts/google-sans-v2003/medium/vietnamese.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;}
+@font-face{font-display:swap;font-family:"Google Sans";font-style:normal;font-weight:500;src:url(https://developer.chrome.com/fonts/google-sans-v2003/medium/latin-ext.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-display:swap;font-family:"Google Sans";font-style:normal;font-weight:500;src:url(https://developer.chrome.com/fonts/google-sans-v2003/medium/latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}

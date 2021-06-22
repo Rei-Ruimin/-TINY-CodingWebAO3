@@ -1,0 +1,21 @@
+button {
+  
+  height: 50px;
+  width: 50px;
+  outline: none;
+  margin: 0 auto;
+  border: none;
+  background-size: cover;
+  background-color: white;
+}
+
+#addTerminal {
+  background-image: url("images/magic_terminal.svg");
+}
+
+#reset {
+  /* height: 30px;
+  width: 30px;
+  margin: 0px 10px 10px; */
+  background-image: url("images/cancel_magic.svg");
+}
